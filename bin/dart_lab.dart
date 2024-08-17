@@ -1,5 +1,5 @@
-import 'package:dart_lab/dart_lab.dart' as dart_lab;
+import 'app.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${dart_lab.calculate()}!');
+  appLogic();
 }
