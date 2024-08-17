@@ -7,19 +7,21 @@ void clearConsole() {
 
 void printMenu() {
   print('=========== MENU ==========');
-  print('1. first steps');
+  print('1. First steps');
+  print('0. Close');
   print('Select section: ');
 }
 
 void printSection1() {
   print('---------- SECTION 1 ---------');
-  print('1. first steps');
+  print('1. Hello World');
+  print('2. Data types - Numbers');
+  print('0. Regresar al menú anterior');
   print('Select section: ');
 }
 
 int getOption() {
   String? option = stdin.readLineSync(encoding: Encoding.getByName('utf-8')!);
-  print("valor ingresado: $option");
   int? value = int.tryParse(option ?? '0');
   return value ?? 0;
 }

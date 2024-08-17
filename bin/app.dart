@@ -1,4 +1,5 @@
-import 'package:dart_lab/hello_world.dart';
+import 'package:dart_lab/section_1/dt_numbers.dart';
+import 'package:dart_lab/section_1/hello_world.dart';
 import 'package:dart_lab/menu.dart';
 
 void appLogic() {
@@ -22,6 +23,8 @@ void section1Logic() {
     switch (option) {
       case 1:
         helloWorld();
+      case 2:
+        calculateMenu();
     }
   } while (option != 0);
 }
