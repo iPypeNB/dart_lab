@@ -1,7 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:dart_lab/menu.dart';
+import 'package:dart_lab/utils/peripherals.dart';
+
 
 void printReadme() {
   print(
