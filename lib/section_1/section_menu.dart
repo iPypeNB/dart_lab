@@ -11,7 +11,10 @@ void section1Logic() {
         helloWorld();
         break;
       case 2:
-        calculateMenu();
+        numbersMenu();
+        break;
+      case 3:
+        stringMenu();
         break;
       default:
         print('invalid option');
@@ -23,6 +26,7 @@ void printSection1() {
   print('---------- SECTION 1 ---------');
   print('1. Hello World');
   print('2. Data types - Numbers');
+  print('3. Data types - Strings');
   print('0. Regresar al menú anterior');
   print('Select section: ');
 }

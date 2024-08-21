@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:dart_lab/utils/peripherals.dart';
 
 
-void printReadme() {
+void printReadmeNumber() {
   print(
       "Datos numérico, los datos numéricos en dart son un tipo de datos que se utilizan para representar numeros matemáticos directamente en el compilador."
       "estos se dividen en dos tipos principales int y double."
@@ -21,13 +21,14 @@ double calculateDiv(double a, double b) {
 }
 
 void printDataTypesNumberMenu() {
+  printReadmeNumber();
   print('--------- CACULADORA ----------');
   print('1. Multiplicar');
   print('2. Dividir');
   print('0. Regresar al menú anterior');
 }
 
-void calculateMenu() {
+void numbersMenu() {
   int option = 0;
   do {
     printDataTypesNumberMenu();
@@ -40,6 +41,7 @@ void calculateMenu() {
         int b = int.parse(stdin.readLineSync(encoding: Encoding.getByName('utf-8')!)!);
         int res = calculateEx(a, b);
         print('resultado: $res');
+        break;
       case 2:
         print('Ingresa el primer número:');
         double a = double.parse(stdin.readLineSync(encoding: Encoding.getByName('utf-8')!)!);
@@ -47,6 +49,7 @@ void calculateMenu() {
         double b = double.parse(stdin.readLineSync(encoding: Encoding.getByName('utf-8')!)!);
         double res = calculateDiv(a, b);
         print('resultado: $res');
+        break;
       default:
         print('opción no valida');
     }
